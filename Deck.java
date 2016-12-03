@@ -16,13 +16,13 @@ public class Deck
 
     public void loadDeck()
     {
-        for(int i = 0; i < SUITS.length; i++)
+        for(int i = 0; i < DESCRIPTIONS.length; i++)
         {
-            for(int j = 0; j < DESCRIPTIONS.length; j++)
+            for(int j = 0; j < SUITS.length; j++)
             {
                 Card c = new Card();
-                c.setSuit(SUITS[i]);
-                c.setDescription(DESCRIPTIONS[j]);
+                c.setSuit(SUITS[j]);
+                c.setDescription(DESCRIPTIONS[i]);
                 deck.add(c);
             }
         }
@@ -30,10 +30,29 @@ public class Deck
     
     public void printDeck()
     {
-        System.out.println("Elements in the ArrayList: " + deck.size());
-        for(Card c : deck)
+        if(deck.size() == 0)
         {
-            System.out.println(c.getDescription() + " of " + c.getSuit());
+            System.out.println("ERROR: Load Deck first !!!");
+        }
+        else
+        {
+            System.out.println("Elements in the ArrayList: " + deck.size());
+            for(Card c : deck)
+            {
+                System.out.println(c.getDescription() + " of " + c.getSuit() + ".");
+            }
+        }
+    }
+    
+    public void removeCard(int i)
+    {
+        if(i >= 0 && i < deck.size())
+        {
+            deck.remove(i);
+        }
+        else
+        {
+            System.out.println("Error: Index out of bound of Deck ArrayList.");
         }
     }
 }
