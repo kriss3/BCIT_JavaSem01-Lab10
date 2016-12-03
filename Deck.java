@@ -4,8 +4,10 @@ import java.util.*;
 
  * Lab 10 For Gary Tong
  *
- * @author Gary Tong
- * @version 1.0
+ * @author Krzysztof Szczurowski;
+ * @version 1.1
+ * @since 12/02/2016
+ * @see https://learn.bcit.ca/d2l/le/content/331960/viewContent/2135678/View
  */
 public class Deck
 {
@@ -14,6 +16,9 @@ public class Deck
     
     public ArrayList<Card> deck = new ArrayList<Card>();
 
+    /**
+     * Public method to load all combination of card and store it in a deck;
+     */
     public void loadDeck()
     {
         for(int i = 0; i < DESCRIPTIONS.length; i++)
@@ -28,6 +33,11 @@ public class Deck
         }
     }
     
+    /**
+     * Public class to print contecnt of a deck ArrayList;<br>
+     * It does not take parameters, it does not return value;<br>
+     * Print Error when cards are not loaded to the deck of cards;
+     */
     public void printDeck()
     {
         if(deck.size() == 0)
@@ -44,6 +54,10 @@ public class Deck
         }
     }
     
+    /**
+     * Public method to remove an element from the Deck of Cards;
+     * @param takes i as integer; index parameter of element to be removed from the Desck of cards;
+     */
     public void removeCard(int i)
     {
         if(i >= 0 && i < deck.size())

@@ -1,8 +1,11 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ loadDeck()
+comment0.text=\r\n\ Public\ method\ to\ load\ all\ combination\ of\ card\ and\ store\ it\ in\ a\ deck;\r\n
 comment1.params=
 comment1.target=void\ printDeck()
+comment1.text=\r\n\ Public\ class\ to\ print\ contecnt\ of\ a\ deck\ ArrayList;<br>\r\n\ It\ does\ not\ take\ parameters,\ it\ does\ not\ return\ value;<br>\r\n\ Print\ Error\ when\ cards\ are\ not\ loaded\ to\ the\ deck\ of\ cards;\r\n
 comment2.params=i
 comment2.target=void\ removeCard(int)
+comment2.text=\r\n\ Public\ method\ to\ remove\ an\ element\ from\ the\ Deck\ of\ Cards;\r\n\ @param\ takes\ i\ as\ integer;\ index\ parameter\ of\ element\ to\ be\ removed\ from\ the\ Desck\ of\ cards;\r\n
 numComments=3
